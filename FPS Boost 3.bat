@@ -3,26 +3,31 @@ cls
 
 :menu
 cls
-color 1
+color 5
 
 date /t
 
-echo Computer: %computername%         User: %username%
-echo -                                                                                                                              
-echo -                            
-echo -                  !BY PEDRI.EXE                                                                                                                   
-echo -                            
-echo - ABRELO COMO ADMIN BOBO SI NO TE VA A DAR ERROR                                                                  
-echo -                                            
-echo -                          Menu     
-echo -           ==================================
-echo -           * 1. Trash Cleaner *
-echo -           * 2. PC Optimizer *
-echo -           * 3. Cache Cleaner *
-echo -           * 4. Go Out*
-echo -           ==================================
+@echo off
+color 05
+cls
 
-set /p opcao=-Enter the number and press ENTER:
+echo =====================================================
+echo                    PEDRI.EXE TOOL                 
+echo =====================================================
+echo   COMPUTER: %computername%                        
+echo   USER:     %username%                            
+echo   TIME:     %time:~0,5%                           
+echo =====================================================
+echo.
+echo                  MENU PRINCIPAL
+echo -----------------------------------------------------
+echo  [1] Trash Cleaner
+echo  [2] PC Optimizer
+echo  [3] Cache Cleaner
+echo  [4] Exit
+echo -----------------------------------------------------
+set /p op=Select an option: 
+
 echo ------------------------------
 if %opcao% equ 1 goto opcao1
 if %opcao% equ 2 goto opcao2
